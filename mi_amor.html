@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Para Ti, Mi Amor 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Corazones flotantes -->
+    <div class="hearts-container" id="hearts"></div>
+
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="header">
+            <h1>💕 Para Ti, Mi Amor 💕</h1>
+            <p class="subtitle">Eres la persona más especial de mi vida</p>
+        </div>
+
+        <!-- Tarjeta de foto -->
+        <div class="photo-card">
+            <div class="photo-frame">
+                <span class="photo-placeholder"><img src="foto_de_inicio.jpg" alt="mi foto" width="270"> </span>
+            </div>
+            <p><strong>La mujer de mis sueños</strong></p>
+        </div>
+
+        <!-- Carta de amor -->
+        <div class="love-letter">
+            <h2>💖 Mi Carta de Amor 💖</h2>
+            <p>
+                Desde el momento en que te conocí, supe que eras alguien especial. 
+                Cada día a tu lado es un regalo que atesoro con todo mi corazón. 
+                Tu sonrisa ilumina mis días más oscuros, y tu presencia me da la 
+                fuerza para enfrentar cualquier obstáculo.
+            </p>
+            <p>
+                Gracias por ser mi compañera, mi confidente, mi mejor amiga y mi 
+                amor. Gracias por cada risa compartida, por cada abrazo, por cada 
+                momento mágico que hemos vivido juntos.
+            </p>
+            <p>
+                Prometo seguir amándote, cuidándote y haciéndote feliz cada día. 
+                Porque tú mereces todo lo hermoso del mundo, y yo haré todo lo 
+                posible por dártelo.
+            </p>
+            <p class="signature">
+                Con todo mi amor,<br>
+                Tu novio 💕
+            </p>
+        </div>
+
+        <!-- Razón del día -->
+        <div class="reason-section">
+            <h3>🌹 La razón por la que te amo hoy:</h3>
+            <p id="reason-text">Porque tu sonrisa me hace sentir que todo está bien en el mundo.</p>
+        </div>
+
+        <!-- Contador de tiempo juntos -->
+        <div class="counter">
+            <h3>⏰ Tiempo que llevamos juntos ⏰</h3>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="number" id="months">1</div>
+                    <div class="label">Meses</div>
+                </div>
+                <div class="counter-item">
+                    <div class="number" id="months">4</div>
+                    <div class="label">Meses</div>
+                </div>
+                <div class="counter-item">
+                    <div class="number" id="hours">1.104</div>
+                    <div class="label">Horas</div>
+                </div>
+                <div class="counter-item">
+                    <div class="number" id="minutes">6.240</div>
+                    <div class="label">Minutos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería de recuerdos -->
+        <div class="gallery">
+            <h3>📸 Nuestros Recuerdos 📸</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="recuerdo1.jpeg" alt="recuerdo 1" width="200"></div>
+                <div class="gallery-item"><img src="recuerdo2.jpeg" alt="recuerdo 2" width="200"></div>
+                <div class="gallery-item"><img src="recuerdo3.jpeg" alt="recuerdo 3" width="200"></div>
+                <div class="gallery-item"><img src="recuerdo4.jpeg" alt="recuerdo 4" width="200"></div>
+                <div class="gallery-item"><img src="recuerdo5.jpeg" alt="recuerdo 5" width="200"></div>
+                <div class="gallery-item"><img src="recuerdo6.jpeg" alt="recuerdo 6" width="200"></div>
+            </div>
+        </div>
+
+        <!-- Botón interactivo -->
+        <div class="button-container">
+            <button class="love-button" onclick="showSecretMessage()">
+                💝 Toca aquí, mi amor 💝
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Hecho con <span>❤️</span> solo para ti</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                © Mi amor por ti es eterno 💕
+            </p>
+        </div>
+    </div>
+
+    <!-- Mensaje secreto -->
+    <div id="secret-message">
+        <h2 style="color: #c44569;">💕 ¡TE AMO! 💕</h2>
+        <p style="font-size: 1.2em; color: #555; margin: 20px 0;">
+            Eres lo más hermoso que me ha pasado en la vida.<br>
+            Gracias por existir y por hacerme feliz.<br>
+            Prometo amarte hoy, mañana y siempre. 🥰
+        </p>
+        <p style="font-size: 1.5em;">💖💖💖</p>
+        <button id="close-message" onclick="hideSecretMessage()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

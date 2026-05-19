@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #ffc0cb 0%, #ff6b6b 50%, #c44569 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Corazones flotando */
+.hearts-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatHeart 4s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.header .subtitle {
+    font-size: 1.5em;
+    color: #fff0f0;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Tarjeta de la foto */
+.photo-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.photo-frame {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #ff6b6b;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ffc0cb, #ff6b6b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-placeholder {
+    font-size: 100px;
+}
+
+.photo-card p {
+    color: #c44569;
+    font-size: 1.2em;
+}
+
+/* Carta de amor */
+.love-letter {
+    background: linear-gradient(145deg, #fff5f5, #ffffff);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    transform: rotate(-1deg);
+}
+
+.love-letter::before {
+    content: '💌';
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 40px;
+}
+
+.love-letter h2 {
+    color: #c44569;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.love-letter p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.love-letter .signature {
+    text-align: right;
+    font-style: italic;
+    color: #ff6b6b;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+/* Razón diaria */
+.reason-section {
+    background: linear-gradient(145deg, #ff6b6b, #c44569);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.reason-section h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.reason-section p {
+    color: #fff0f0;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+/* Contador de tiempo juntos */
+.counter {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.counter h3 {
+    color: #c44569;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.counter-item {
+    background: linear-gradient(145deg, #ffc0cb, #ff6b6b);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+
+.counter-item .number {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.counter-item .label {
+    font-size: 0.9em;
+}
+
+/* Botón interactivo */
+.button-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.love-button {
+    background: linear-gradient(145deg, #ff6b6b, #c44569);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.love-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.love-button:active {
+    transform: scale(0.95);
+}
+
+/* Galería simple */
+.gallery {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.gallery h3 {
+    color: #c44569;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    background: linear-gradient(45deg, #ffc0cb, #ff6b6b);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.footer span {
+    animation: heartbeat 1s infinite;
+    display: inline-block;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .love-letter {
+        padding: 25px;
+    }
+}
+
+/* Mensaje secreto */
+#secret-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    z-index: 100;
+    text-align: center;
+    max-width: 90%;
+}
+
+#secret-message.show {
+    display: block;
+    animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+#close-message {
+    margin-top: 20px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
