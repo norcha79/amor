@@ -11,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Corazones flotando */
 .hearts-container {
     position: fixed;
     width: 100%;
@@ -45,7 +44,6 @@ body {
     }
 }
 
-/* Contenedor principal */
 .container {
     position: relative;
     z-index: 2;
@@ -53,8 +51,6 @@ body {
     margin: 0 auto;
     padding: 40px 20px;
 }
-
-/* Encabezado */
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -79,7 +75,6 @@ body {
     font-style: italic;
 }
 
-/* Tarjeta de la foto */
 .photo-card {
     background: white;
     border-radius: 20px;
@@ -111,7 +106,6 @@ body {
     font-size: 1.2em;
 }
 
-/* Carta de amor */
 .love-letter {
     background: linear-gradient(145deg, #fff5f5, #ffffff);
     border-radius: 20px;
@@ -153,7 +147,6 @@ body {
     margin-top: 20px;
 }
 
-/* Razón diaria */
 .reason-section {
     background: linear-gradient(145deg, #ff6b6b, #c44569);
     border-radius: 20px;
@@ -175,7 +168,6 @@ body {
     font-style: italic;
 }
 
-/* Contador de tiempo juntos */
 .counter {
     background: white;
     border-radius: 20px;
@@ -213,7 +205,6 @@ body {
     font-size: 0.9em;
 }
 
-/* Botón interactivo */
 .button-container {
     text-align: center;
     margin-bottom: 30px;
@@ -278,7 +269,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Footer */
 .footer {
     text-align: center;
     color: white;
@@ -298,7 +288,6 @@ body {
     75% { transform: scale(1.2); }
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .header h1 {
         font-size: 2em;
@@ -317,7 +306,6 @@ body {
     }
 }
 
-/* Mensaje secreto */
 #secret-message {
     display: none;
     position: fixed;
